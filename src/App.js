@@ -1,9 +1,10 @@
 import Header from "./components/Header";
+import Counter from "./features/Counter/Counter";
+import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <h2>Hello World</h2>
+      <Counter />
     </div>
   );
 }
