@@ -1,8 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   count: 0,
 };
+export const incrementAsync = createAsyncThunk(
+  "counter/incrementAsync" // action type prefix
+);
 export const counterSlice = createSlice({
   name: "counter",
   initialState,
